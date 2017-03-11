@@ -1,3 +1,5 @@
+import {fetchMessages} from '../xhr/index';
+
 // increment 
 export function increment(index) {
     return {
@@ -22,5 +24,12 @@ export function removeComment(postId, i) {
         type: 'REMOVE_COMMENT',
         i,
         postId
+    };
+}
+
+export function fetchMessages(communeId){
+    return {
+        type:"FETCH_MESSAGES",
+        result:getMessages(communeId)
     };
 }

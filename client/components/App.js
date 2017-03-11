@@ -6,7 +6,12 @@ import Main from './Main';
 function mapStateToProps(state){
     return {
         posts: state.posts,
-        comments: state.comments
+        comments: state.comments,
+        quartiers: state.quartiers,
+        communes:state.communes,
+        messages:state.messages,
+        services:state.services,
+        servicescategories:state.servicecategories  
     };
 }
 

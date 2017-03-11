@@ -12,6 +12,7 @@ import './public/stylesheets/semantic.min.css';
 // Import components
 import App from './components/App';
 import Single from './components/Single';
+import Messages from './components/Messages';
 import PhotoGrid from './components/PhotoGrid';
 
 
@@ -21,6 +22,8 @@ const router = (
                 <Route path="/" component={App}>
                     <IndexRoute component={PhotoGrid}></IndexRoute>
                     <Route path='/view/:postId' component={Single}></Route>
+                    <Route path='/messages' component={Messages}></Route>
+                    <Route path='/messages/add/:communeId' component={Single}></Route>
                 </Route>
             </Router>
         </Provider>
