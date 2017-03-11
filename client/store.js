@@ -7,10 +7,16 @@ import rootReducer from './reducers/index';
 
 import comments from './data/comments';
 import posts from './data/posts';
+import {servicecategories,services,communes,quartiers,messages} from './data/services';
 
 const defaultState = {
     posts,
-    comments
+    comments,
+    servicecategories,
+    services,
+    communes,
+    quartiers,
+    messages
 };
 
 

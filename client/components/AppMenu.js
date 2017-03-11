@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Menu, Segment,Input } from 'semantic-ui-react'
+import { Menu, Segment,Input } from 'semantic-ui-react';
+import {Link} from 'react-router';
 
 export default class AppMenu extends Component {
   state = { activeItem: 'home' }
@@ -12,15 +13,15 @@ export default class AppMenu extends Component {
     return (
       <Segment inverted>
         <Menu inverted>
-        <Menu.Item name='Messages' active={activeItem === 'Messages'} onClick={this.handleItemClick} />
-        <Menu.Item name='Groupe' active={activeItem === 'Groupe'} onClick={this.handleItemClick} />
-        <Menu.Item name='Evenements' active={activeItem === 'Evenements'} onClick={this.handleItemClick} />
+        <Menu.Item name='Messages' active={activeItem === 'Messages'} as={Link} onClick={this.handleItemClick} to="/messages" />
+        <Menu.Item name='Groupe' as={Link} active={activeItem === 'Groupe'} onClick={this.handleItemClick} to="/groupes" />
+        <Menu.Item name='Evenements' as={Link} active={activeItem === 'Evenements'} onClick={this.handleItemClick} to="/evenements" />
         <Menu.Menu position='right'>
           <Menu.Item>
             <Input icon='search' placeholder='Search...' />
           </Menu.Item>
-          <Menu.Item name='login' active={activeItem === 'login'} onClick={this.handleItemClick} />
-          <Menu.Item name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick} />
+          <Menu.Item name='login' as={Link} active={activeItem === 'login'} onClick={this.handleItemClick} to="/login" />
+          <Menu.Item name='signup' as={Link} active={activeItem === 'signup'} onClick={this.handleItemClick} to="/signup"/>
         </Menu.Menu>
       </Menu>
       </Segment>
