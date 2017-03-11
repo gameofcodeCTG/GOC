@@ -2,6 +2,8 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var bodyParser = require('body-parser');
+
 var app = module.exports = loopback();
 
 /**** NEW INSTRUCTIONS ****/
@@ -14,6 +16,7 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require(`../webpack.config.${mode}`);
 var compiler = webpack(config);
 
+
 if (mode === env.DEVELOPMENT) {
     // only need in development
     app.use(webpackDevMiddleware(compiler, {noInfo: true, publicPath: config.output.publicPath}));
@@ -21,6 +24,15 @@ if (mode === env.DEVELOPMENT) {
 app.use(webpackHotMiddleware(compiler));
 
 /*** END NEW INSTRUCTION ***/
+
+// configure view handler
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+
+// configure body parser
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(loopback.token());
 
 app.start = function () {
     // start the web server

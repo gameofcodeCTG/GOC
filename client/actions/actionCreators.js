@@ -1,7 +1,4 @@
-import axios from 'axios';
-
-const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:3000/api' : '/api';
-
+import {fetchMessages} from '../xhr/index';
 
 // increment 
 export function increment(index) {
