@@ -1,4 +1,7 @@
-import {fetchMessages} from '../xhr/index';
+import axios from 'axios';
+
+const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:3000/api' : '/api';
+
 
 // increment 
 export function increment(index) {
@@ -27,9 +30,24 @@ export function removeComment(postId, i) {
     };
 }
 
-export function fetchMessages(communeId){
-    return {
-        type:"FETCH_MESSAGES",
-        result:getMessages(communeId)
+
+export function fetchMessages() {
+    return function (dispatch) {
+        axios.get(`${ROOT_URL}/Messages`)
+                .then(function (response) {
+                    console.log(response);
+                    dispatch(fetchMessagesSuccess(response.data));
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
     };
 }
+
+export function fetchMessagesSuccess(messages) {
+    return {
+        type: "FETCH_MESSAGES_SUCCESS",
+        payload: messages
+    };
+}
+
