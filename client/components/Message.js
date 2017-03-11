@@ -19,6 +19,7 @@ class Message extends Component {
                 </Card.Content>
                 </Card>
                 );
+        
     }
 }
 
