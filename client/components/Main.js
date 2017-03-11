@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
+import {Container} from 'semantic-ui-react';
+import AppMenu from './AppMenu';
 
 class Main extends Component {
     constructor(props) {
@@ -7,12 +9,10 @@ class Main extends Component {
     }
     render() {
         return (
-                <div>
-                    <h1>
-                        <Link to="/">Super Better Town</Link>
-                    </h1>
-                    {React.cloneElement(this.props.children,this.props)}
-                </div>
+                <Container>
+                    <AppMenu></AppMenu>
+                    {React.cloneElement(this.props.children, this.props)}
+                </Container>
                 );
     }
 }
