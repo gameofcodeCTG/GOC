@@ -8,16 +8,17 @@ import rootReducer from './reducers/index';
 
 import comments from './data/comments';
 import posts from './data/posts';
-import {servicecategories, services, communes, quartiers, messages} from './data/services';
+import {servicescategories, services, communes, quartiers, messages} from './data/services';
 
 const defaultState = {
     posts,
     comments,
-    servicecategories,
+    servicescategories,
     services,
     communes,
     quartiers,
-    messages
+    messages,
+    login:{}
 };
 
 

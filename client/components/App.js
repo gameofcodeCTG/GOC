@@ -11,7 +11,8 @@ function mapStateToProps(state){
         communes:state.communes,
         messages:state.messages,
         services:state.services,
-        servicescategories:state.servicecategories  
+        servicescategories:state.servicescategories,
+        account:state.login
     };
 }
 

@@ -14,7 +14,7 @@ class Message extends Component {
                 <Card>
                 <Card.Content>
                     <Card.Header>{this.props.message.titre}</Card.Header>
-                    <Card.Meta>{auteur}</Card.Meta>
+                    <Card.Meta>Test</Card.Meta>
                     <Card.Description>{this.props.message.contenu}</Card.Description>
                 </Card.Content>
                 </Card>

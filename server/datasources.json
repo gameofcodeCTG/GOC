@@ -7,7 +7,7 @@
     "host": "localhost",
     "port": 27017,
     "url": "",
-    "database": "sbt",
+    "database": "superdb",
     "password": "",
     "name": "mongodb",
     "user": "",

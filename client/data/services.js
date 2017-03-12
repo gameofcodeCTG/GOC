@@ -1,4 +1,4 @@
-export const servicecategories = [
+export const servicescategories = [
     {
         code:"SERVICE_VEHICULE"        
     },
@@ -12,15 +12,15 @@ export const servicecategories = [
 
 export const services  = [
     {
-        category:servicecategories[0],
+        category:servicescategories[0],
         label:"Services véhiculés"
     },
     {
-        category:servicecategories[1],
+        category:servicescategories[1],
         label:"Prêts outillages"
     },
     {
-        category:servicecategories[2],
+        category:servicescategories[2],
         label:"Apprentissage"
     }
 ];

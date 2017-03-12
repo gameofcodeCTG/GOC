@@ -4,8 +4,16 @@ function messages(state = [], action) {
     switch (action.type) {
         case 'FETCH_MESSAGES_SUCCESS':
             console.log("FETCH MESSAGES SUCCESS");
-            console.log(state);
+            console.log("Old messages" + state);
+            console.log("New messages" + action.payload);
             return action.payload;
+            break;
+        case 'POST_MESSAGE_SUCCESS':
+            console.log("POST MESSAGES SUCCESS");
+            console.log(state);
+            const ns = state.slice();
+            ns.unshift(action.payload);
+            return ns;
             break;
         default:
             return state;

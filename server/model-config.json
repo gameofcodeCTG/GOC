@@ -35,5 +35,9 @@
   "Message": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "ServiceCategorie": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
