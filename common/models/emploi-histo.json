@@ -1,0 +1,54 @@
+{
+  "name": "emploi_histo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "COMMUNE_CODE": {
+      "type": "number",
+      "required": true
+    },
+    "COMMUNE_NOM": {
+      "type": "string",
+      "required": true
+    },
+    "EMPLOI_2009_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2010_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2011_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2012_03_30": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2013_03_29": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2014_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2015_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2016_03_31": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

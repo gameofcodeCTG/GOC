@@ -1,8 +1,9 @@
 // a reducer takes in two things
 
-// 1. the action (info about what happend)
+// 1. copy of current state
 
-// 2. copy of current state
+// 2. the action (info about what happend)
+
 
 function posts(state = [],action){
     console.log('Post will change');

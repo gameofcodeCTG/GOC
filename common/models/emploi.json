@@ -1,0 +1,34 @@
+{
+  "name": "emploi",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "COMMUNE_CODE": {
+      "type": "number",
+      "required": true
+    },
+    "COMMUNE_NOM": {
+      "type": "string",
+      "required": true
+    },
+    "PERCENT_EMPLOI_2016": {
+      "type": "number",
+      "required": true
+    },
+    "EMPLOI_2016_03_31": {
+      "type": "number",
+      "required": true
+    },
+    "TOTALE": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

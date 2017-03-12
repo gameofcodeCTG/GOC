@@ -1,21 +1,17 @@
 {
-  "name": "Car",
+  "name": "commune",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "make": {
-      "type": "string",
-      "required": true
-    },
-    "model": {
-      "type": "string",
-      "required": true
-    },
-    "year": {
+    "COMMUNE_CODE": {
       "type": "number",
+      "required": true
+    },
+    "COMMUNE_NOM": {
+      "type": "string",
       "required": true
     }
   },

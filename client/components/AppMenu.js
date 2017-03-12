@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Menu, Segment,Input } from 'semantic-ui-react';
 import {Link} from 'react-router';
 
+import CommuneList from './CommuneList'
+
 export default class AppMenu extends Component {
   state = { activeItem: 'home' }
 
@@ -13,6 +15,7 @@ export default class AppMenu extends Component {
     return (
       <Segment inverted>
         <Menu inverted>
+          <Menu.Item><CommuneList selectMethod={this.updateData}/></Menu.Item>
         <Menu.Item name='Messages' active={activeItem === 'Messages'} as={Link} onClick={this.handleItemClick} to="/messages" />
         <Menu.Item name='Groupe' as={Link} active={activeItem === 'Groupe'} onClick={this.handleItemClick} to="/groupes" />
         <Menu.Item name='Evenements' as={Link} active={activeItem === 'Evenements'} onClick={this.handleItemClick} to="/evenements" />
