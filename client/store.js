@@ -15,7 +15,7 @@ const defaultState = {
     comments,
     servicecategories,
     services,
-    communes,
+    communes:{id:1},
     quartiers,
     messages
 };

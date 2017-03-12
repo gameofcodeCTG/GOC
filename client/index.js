@@ -22,7 +22,7 @@ const router = (
         <Provider store={store}>
             <Router history={history}>
                 <Route path="/" component={App}>
-                    <IndexRoute component={CommuneList}></IndexRoute>
+                    <IndexRoute component={Commune}></IndexRoute>
                     <Route path='/view/:postId' component={Single}></Route>
                     <Route path='/messages' component={Messages}></Route>
                     <Route path='/messages/add/:communeId' component={Single}></Route>

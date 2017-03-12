@@ -48,5 +48,9 @@
   "pyramide": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "emploi_histo": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

@@ -9,6 +9,8 @@ function selectCommune(state = [], action) {
   switch (action.type) {
 
     case 'SELECT_COMMUNE':
+
+
       return {
         id: action.value
       }
