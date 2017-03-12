@@ -44,5 +44,9 @@
   "commune": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "pyramide": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

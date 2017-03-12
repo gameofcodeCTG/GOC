@@ -22,13 +22,19 @@ class CommuneList extends React.Component {
   render() {
     return (
       <div>
-        <Form.Field label='Commune '  placeholder='Commune' control='select'>
-          {this.state.communeList.map(commune =>
-            <option value='{commune.COMMUNE_CODE}'>{commune.COMMUNE_NOM}</option>
+        <Form.Field label='Commune ' id='communeSelector' placeholder='Commune' control='select' onChange = {(e) => this.selectCommune(e)}>
+          {this.state.communeList.map((commune,i) =>
+            <option key={i} value={commune.COMMUNE_CODE}>{commune.COMMUNE_NOM}</option>
           )}
         </Form.Field>
       </div>
   );
+  }
+
+  selectCommune(e) {
+    const select = document.getElementById('communeSelector');
+    const value = select.value.trim();
+    this.props.selectMethod(value);
   }
 }
 

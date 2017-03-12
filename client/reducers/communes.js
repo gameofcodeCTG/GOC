@@ -5,12 +5,12 @@ function commune(state = [],action){
 }
 
 
-function selectCommune(state, action) {
+function selectCommune(state = [], action) {
   switch (action.type) {
 
-    case SELECT_COMMUNE:
+    case 'SELECT_COMMUNE':
       return {
-        id: action.id
+        id: action.value
       }
 
     default:
