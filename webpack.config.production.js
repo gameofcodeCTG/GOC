@@ -17,11 +17,11 @@ module.exports = {
       exclude: /node_modules/,
       include: path.join(__dirname, 'client')
     },{
-      test: /\.json$/, 
+      test: /\.json$/,
       loader: 'json'
     },{
       test: /\.css$/,
       loader: 'style-loader!css-loader'
-    }]
+    }
   }
 };

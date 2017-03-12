@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "mongodb"
+    "dataSource": "mongodb",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "mongodb",
@@ -36,6 +37,19 @@
     "dataSource": "mongodb",
     "public": true
   },
+  "emploi": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "commune": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "pyramide": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "emploi_histo": {
   "ServiceCategorie": {
     "dataSource": "mongodb",
     "public": true

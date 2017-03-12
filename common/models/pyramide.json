@@ -1,0 +1,110 @@
+{
+  "name": "pyramide",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "COMMUNE_CODE": {
+      "type": "number",
+      "required": true
+    },
+    "COMMUNE_NOM": {
+      "type": "string",
+      "required": true
+    },
+    "SEXE": {
+      "type": "string",
+      "required": true
+    },
+    "AGE00_05": {
+      "type": "number",
+      "required": true
+    },
+    "AGE_05_10": {
+      "type": "number",
+      "required": true
+    },
+    "AGE10_15": {
+      "type": "number",
+      "required": true
+    },
+    "AGE15_20": {
+      "type": "number",
+      "required": true
+    },
+    "AGE20_25": {
+      "type": "number",
+      "required": true
+    },
+    "AGE25_30": {
+      "type": "number",
+      "required": true
+    },
+    "AGE30_35": {
+      "type": "number",
+      "required": true
+    },
+    "AGE35_40": {
+      "type": "number",
+      "required": true
+    },
+    "AGE40_45": {
+      "type": "number",
+      "required": true
+    },
+    "AGE45_50": {
+      "type": "number",
+      "required": true
+    },
+    "AGE50_55": {
+      "type": "number",
+      "required": true
+    },
+    "AGE55_60": {
+      "type": "number",
+      "required": true
+    },
+    "AGE60_65": {
+      "type": "number",
+      "required": true
+    },
+    "AGE65_70": {
+      "type": "number",
+      "required": true
+    },
+    "AGE70_75": {
+      "type": "number",
+      "required": true
+    },
+    "AGE75_80": {
+      "type": "number",
+      "required": true
+    },
+    "AGE80_85": {
+      "type": "number",
+      "required": true
+    },
+    "AGE85_90": {
+      "type": "number",
+      "required": true
+    },
+    "AGE90_95": {
+      "type": "number",
+      "required": true
+    },
+    "AGE95_100": {
+      "type": "number",
+      "required": true
+    },
+    "AGE100_": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

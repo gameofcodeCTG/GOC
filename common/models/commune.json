@@ -1,0 +1,22 @@
+{
+  "name": "commune",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "COMMUNE_CODE": {
+      "type": "number",
+      "required": true
+    },
+    "COMMUNE_NOM": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

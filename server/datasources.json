@@ -6,7 +6,7 @@
   "mongodb": {
     "host": "localhost",
     "port": 27017,
-    "url": "",
+    "url": "mongodb://localhost/superdb",
     "database": "superdb",
     "password": "",
     "name": "mongodb",
